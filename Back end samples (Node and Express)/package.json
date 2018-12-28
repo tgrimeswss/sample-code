@@ -1,0 +1,51 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec 'mocha -R min' ",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\" "
+  },
+  "author": "Thomas Grimes",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.3",
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.2",
+    "express-async-errors": "^3.1.1",
+    "express-session": "^1.15.6",
+    "googleapis": "^27.0.0",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "^8.2.1",
+    "method-override": "^2.3.10",
+    "mlab-data-api": "^0.2.2",
+    "mocha": "^5.0.4",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.3.12",
+    "multer": "^1.3.0",
+    "multer-gridfs-storage": "^3.0.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-linkedin": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.13",
+    "socket.io": "^2.1.1",
+    "stripe": "^6.7.0",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "nodemon": "^1.17.1"
+  }
+}
